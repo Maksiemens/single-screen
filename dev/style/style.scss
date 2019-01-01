@@ -1,0 +1,103 @@
+@import "reset";
+// @import "animate";
+// @import "animate-custom";
+
+// @import "fonts";
+// @import "variables";
+// @import "mixins";
+// @import "template-selectors";
+// @import "general";
+// @import "scroll";
+
+
+// Let's Start =)
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+.page {
+
+}
+
+
+.header {
+
+}
+
+.main {
+
+}
+
+.about {
+
+  .content {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+   
+    &::before {
+      content: "";
+      display: block;
+      width: 65%;
+      height: 100%;
+      min-width: 560px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 200;
+      opacity: 0.8;
+      transform: skew(25deg, 0deg);
+      transform-origin: left bottom 0;
+      background: url('../img/bg_1.png') no-repeat center center / cover;
+    }
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 100%;
+      min-width: 560px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      // left: 0;
+      z-index: 200;
+      opacity: 0.8;
+      transform: skew(25deg, 0deg);
+      transform-origin: right top 0;
+      background: url('../img/bg_1.png') no-repeat center center / cover;
+    }
+
+  }
+
+  .video {
+    width: auto;
+    height: auto;
+    min-width: 100%; 
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+  }
+}
+
+.footer {
+ 
+}
+
+
+.container {
+  max-width: 1205px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 0 15px; 
+}

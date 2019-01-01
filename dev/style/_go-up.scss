@@ -1,0 +1,19 @@
+.go-up {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+ 
+  &__button {
+		@extend %default_button;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    background: url('../img/bg_next-step.png') center / 25px no-repeat rgba($color-1, .7);
+    
+    &:hover {
+      background-color: $color-1;
+    }
+  }
+}

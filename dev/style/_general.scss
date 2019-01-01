@@ -1,0 +1,15 @@
+//placeholders
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+
+  &::placeholder {
+    // @include font-roboto(14px, $color-8, 400);
+  }
+}
+
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}

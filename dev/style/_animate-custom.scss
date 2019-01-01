@@ -1,0 +1,17 @@
+@keyframes animatedBackground {
+  from {
+    background-position: 10% 0;
+  }
+  to {
+    background-position: 95% 0;
+  }
+}
+
+@keyframes animatedTranslate {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
